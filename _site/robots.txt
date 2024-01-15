@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://imishani.github.io/sitemap.xml
