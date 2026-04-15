@@ -1,10 +1,19 @@
 ---
 layout: post
+date: 2026-01-31 16:11:00-0400
+inline: True
+related_posts: false
+---
+2 Papers accepted to ICRA 2026: [MOSAIC](https://arxiv.org/abs/2504.16738) and [PACHS](https://arxiv.org/abs/2509.25402) 
+
+
+<!-- ---
+layout: post
 date: 2024-01-19 16:11:00-0400
 inline: True
 related_posts: false
 ---
-Our [paper](https://arxiv.org/abs/2311.00837) on _Constant-time Motion Planning with Anytime Refinement for Manipulation_ has been accepted to [ICRA 2024](https://2024.ieee-icra.org).
+Our [paper](https://arxiv.org/abs/2311.00837) on _Constant-time Motion Planning with Anytime Refinement for Manipulation_ has been accepted to [ICRA 2024](https://2024.ieee-icra.org). -->
 
 [//]: # (Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.)
 

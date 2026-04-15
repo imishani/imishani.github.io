@@ -1,15 +1,56 @@
 ---
-@article{mishani2025mosaicskillcentricalgorithmicframework,
-    title={MOSAIC: A Skill-Centric Algorithmic Framework for Long-Horizon Manipulation Planning}, 
+@inproceedings{mishani2026mosaic,
+    title={MOSAIC: A Skill-Centric Algorithmic Framework for Long-Horizon Manipulation Planning},
     author={Itamar Mishani and Yorai Shaoul and Maxim Likhachev},
-    year={2025},
+    booktitle={2026 IEEE International Conference on Robotics and Automation (ICRA)},
+    year={2026},
     eprint={2504.16738},
     archivePrefix={arXiv},
     primaryClass={cs.RO},
-    url={https://arxiv.org/abs/2504.16738}, 
+    url={https://arxiv.org/abs/2504.16738},
     preview={gif_mosaic-static-obs.gif},
     website={https://skill-mosaic.github.io/},
     selected={true}
+}
+
+@inproceedings{yang2026pachs,
+    title={Parallel Heuristic Search as Inference for Actor-Critic Reinforcement Learning Models},
+    author={Hanlan Yang* and Itamar Mishani* and Luca Pivetti and Zachary Kingston and Maxim Likhachev},
+    booktitle={2026 IEEE International Conference on Robotics and Automation (ICRA)},
+    year={2026},
+    preview={pachs.png},
+    eprint={2509.25402},
+    archivePrefix={arXiv},
+    primaryClass={cs.RO},
+    url={https://arxiv.org/abs/2509.25402},
+    abstract={This paper presents PACHS, a parallel best-first search algorithm for inference that combines both components of actor-critic architecture. The actor network generates actions, while the critic network provides cost-to-go estimates to guide the search. The approach employs dual parallelism through batch processing by neural networks and multi-threaded graph expansion.},
+    selected={true}
+}
+
+@article{mishani2025srmp,
+    title={SRMP: Search-Based Robot Motion Planning Library},
+    author={Itamar Mishani and Yorai Shaoul and Ramkumar Natarajan and Jiaoyang Li and Maxim Likhachev},
+    year={2025},
+    eprint={2509.25352},
+    preview={srmp_gif.gif},
+    archivePrefix={arXiv},
+    primaryClass={cs.RO},
+    url={https://arxiv.org/abs/2509.25352},
+    abstract={The framework addresses motion planning challenges in robotics by prioritizing consistent and reliable trajectories for demanding applications. It represents the inaugural software tool offering motion planning algorithms for multi-robot manipulation tasks. The system integrates with major simulators including MuJoCo, Sapien, Genesis, and PyBullet, and includes a MoveIt! plugin for hardware deployment.},
+    selected={false}
+}
+
+@article{gandotra2025bctmp,
+    title={Constant-Time Motion Planning with Manipulation Behaviors},
+    author={Nayesha Gandotra* and Itamar Mishani* and Maxim Likhachev},
+    year={2025},
+    eprint={2512.00939},
+    archivePrefix={arXiv},
+    preview={bctmp_neighbourhoods.png},
+    primaryClass={cs.RO},
+    url={https://arxiv.org/abs/2512.00939},
+    abstract={This paper introduces Behavioral Constant-Time Motion Planner (B-CTMP), which extends existing motion planning methods to handle manipulation tasks. The approach combines collision-free motion to a behavior initiation state, followed by execution of a manipulation behavior such as grasping or insertion. The algorithm uses preprocessing to guarantee constant-time query in mere milliseconds while ensuring completeness and successful task execution.},
+    selected={false}
 }
 ---
 @inproceedings{mmd,
@@ -54,7 +95,7 @@
     keywords={Manipulators;Reliability engineering;Data structures;Real-time systems;Planning;Time factors;Task analysis},
     doi={10.1109/ICRA57147.2024.10611675},
     preview = {ctmp.png},
-    selected={true},
+    selected={false},
     abstract = {Robotic manipulators are essential for future autonomous systems, yet limited trust in their autonomy has confined them to rigid, task-specific systems. The intricate configuration space of manipulators, coupled with the challenges of obstacle avoidance and constraint satisfaction, often makes motion planning the bottleneck for achieving reliable and adaptable autonomy. Recently, a class of constant-time motion planners (CTMP) was introduced. These planners employ a preprocessing phase to compute data structures that enable online planning provably guarantee the ability to generate motion plans, potentially sub-optimal, within a user defined time bound. This framework has been demonstrated to be effective in a number of time-critical tasks. However, robotic systems often have more time allotted for planning than the online portion of CTMP requires, time that can be used to improve the solution. To this end, we propose an anytime refinement approach that works in combination with CTMP algorithms. Our proposed framework, as it operates as a constant time algorithm, rapidly generates an initial solution within a user-defined time threshold. Furthermore, functioning as an anytime algorithm, it iteratively refines the solution's quality within the allocated time budget. This enables our approach to strike a balance between guaranteed fast plan generation and the pursuit of optimization over time. We support our approach by elucidating its analytical properties, showing the convergence of the anytime component towards optimal solutions. Additionally, we provide empirical validation through simulation and real-world demonstrations on a 6 degree-of-freedom robot manipulator, applied to an assembly domain.},
 }
 
