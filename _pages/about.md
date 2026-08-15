@@ -21,7 +21,7 @@ social: true # includes social icons at the bottom of the page
 
 I am a PhD Student at <a href='https://www.ri.cmu.edu'>The Robotics Institute</a>, Carnegie Mellon University, advised by <a href='https://www.cs.cmu.edu/~maxim/'>Maxim Likhachev</a>.
 
-I work on search-based planning for robotic manipulation: treating skills as active participants in the search rather than fixed primitives (<a href='https://skill-mosaic.github.io/'>MOSAIC</a>), coordinating teams of arms in cluttered workspaces (<a href='https://x-cbs.github.io'>xECBS</a>, <a href='https://multi-robot-diffusion.github.io/'>MMD</a>), and planning in high dimensions, where a single search graph is rarely the right structure (<a href='https://multi-graph-search.github.io/'>MGS</a>).
-A thread running through it is combining learned models with search while keeping the guarantees search provides. Much of the work is released in <a href='https://srmp.readthedocs.io/'>SRMP</a>.
+My research is on planning and learning for robotic manipulation, with a focus on high-dimensional and multi-arm systems.
+I am interested in combining learned models with search-based planning, without giving up the guarantees that search provides.
 
 Previously, I was a Master's Student at <a href='https://english.tau.ac.il/'>Tel Aviv University</a>, advised by <a href='http://web2.eng.tau.ac.il/wtest/Avishailab/index.php/sintov/'>Avishai Sintov</a> at <a href='http://web2.eng.tau.ac.il/wtest/Avishailab/'>TAU Robotics Lab</a>.
