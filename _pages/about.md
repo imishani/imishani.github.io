@@ -21,6 +21,6 @@ social: true # includes social icons at the bottom of the page
 
 I am a PhD Student at <a href='https://www.ri.cmu.edu'>The Robotics Institute</a>, Carnegie Mellon University, advised by <a href='https://www.cs.cmu.edu/~maxim/'>Maxim Likhachev</a>.
 
-My research is on planning and learning for manipulation with contact, multi-arm, and high-dimensional systems — and on how the two can be better integrated.
+My research is on planning and learning for manipulation with contact, multi-arm, and high-dimensional systems — and on how the two can be better integrated to achieve general-purpose robots.
 
 Previously, I was a Master's Student at <a href='https://english.tau.ac.il/'>Tel Aviv University</a>, advised by <a href='http://web2.eng.tau.ac.il/wtest/Avishailab/index.php/sintov/'>Avishai Sintov</a> at <a href='http://web2.eng.tau.ac.il/wtest/Avishailab/'>TAU Robotics Lab</a>.
