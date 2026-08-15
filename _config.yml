@@ -8,7 +8,9 @@ middle_name:
 last_name: Mishani
 email: imishani@cmu.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  PhD student at the Robotics Institute, Carnegie Mellon University, working on search-based
+  motion planning and manipulation — long-horizon skill planning, multi-robot coordination,
+  and combining learned models with search.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -58,9 +60,9 @@ max_width: 800px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: https://imishani.github.io/assets/img/profile_me.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -70,9 +72,9 @@ github_username: imishani # your GitHub user name
 gitlab_username: imishani # your GitLab user name
 x_username: ItamarMishani # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: imishani@gmail.com # your LinkedIn user name
+linkedin_username: itamar-mishani-130aa91b8 # your LinkedIn user name
 telegram_username: # your Telegram user name
-scholar_userid: Itamar Mishani # your Google Scholar ID
+scholar_userid: rDCG1NAAAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: 0000-0002-2731-7441 # your ORCID ID
@@ -156,9 +158,9 @@ disqus_shortname: al-folio # put your disqus shortname
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
+# Disabled: this pulled the al-folio project's own Medium feed and republished those
+# posts under this domain (e.g. /blog/2022/displaying-external-posts-on-your-al-folio-blog/).
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -208,6 +210,20 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  # Theme scaffolding — these were being copied into _site and served publicly
+  # (e.g. imishani.github.io/Dockerfile, /INSTALL.md). They are repo files, not site content.
+  - CONTRIBUTING.md
+  - CUSTOMIZE.md
+  - FAQ.md
+  - INSTALL.md
+  - README.md
+  - LICENSE
+  - Dockerfile
+  - docker-compose.yml
+  - package.json
+  - package-lock.json
+  - purgecss.config.js # read from the repo root by CI, not from _site
+  - reports
 keep_files:
   - CNAME
   - .nojekyll
@@ -339,11 +355,13 @@ imagemagick:
   input_directories:
     - assets/img/
   input_formats:
+    # .gif is deliberately excluded: imagemagick flattens animated gifs into a single-frame
+    # webp, which would silently turn animated previews into stills. Animated previews are
+    # committed as animated .webp instead and served directly (see _includes/figure.liquid).
     - ".jpg"
     - ".jpeg"
     - ".png"
     - ".tiff"
-    - ".gif"
   output_formats:
     webp: "-quality 85"
 

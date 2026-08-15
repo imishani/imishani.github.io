@@ -2,11 +2,26 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
-nav: false
+description: Courses I have taught as a teaching assistant.
+nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+## Carnegie Mellon University
 
-Organize your courses by years, topics, or universities, however you like!
+- **[16-350: Planning Techniques for Robotics](https://www.cs.cmu.edu/~maxim/classes/robotplanning/)** — Spring 2024
+  <br>Teaching assistant. Graph search, sampling-based planning, planning under uncertainty, and symbolic planning for robotics.
+
+## Tel Aviv University
+
+- **Introduction to Robotics** — Spring 2021, Spring 2022
+  <br>Teaching assistant.
+
+- **Robotics and Control Lab** — Fall 2021, Spring 2022
+  <br>Teaching assistant. Designed and built the course material, available on [GitHub](https://github.com/imishani/robotics_lab).
+
+- **Control Lab** — Fall 2021
+  <br>Teaching assistant.
+
+- **Mechanics of Solids** — Fall 2020
+  <br>Teaching assistant.

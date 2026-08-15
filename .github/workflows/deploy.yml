@@ -33,6 +33,15 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
+      - name: Install ImageMagick 🖼️
+        # Required by jekyll-imagemagick. Without it the responsive <source srcset> variants
+        # (-480.webp / -800.webp / -1400.webp) are never generated and every visitor falls
+        # back to downloading the full-size original.
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick webp
+          convert -version
+          convert -list format | grep -i webp
       - name: Install and Build 🔧
         run: |
           pip3 install --upgrade jupyter

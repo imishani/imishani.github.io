@@ -2,10 +2,10 @@ github_users:
   - imishani
 
 github_repos:
-  - imishani/search
-  - imishani/manipulation_planning
+  # Note: imishani/search and imishani/manipulation_planning were removed — both return 404
+  # for anonymous visitors, so their cards rendered as errors on the repositories page.
+  - imishani/srmp-docs
   - imishani/scene_builder
   - imishani/robotics_lab
-  - imishani/bullet3
   - imishani/ctmp
   - imishani/elastic_wire_manipulation

@@ -1,4 +1,10 @@
 {% assign img_path = include.path | remove: '.jpg' | remove: '.jpeg' | remove: '.png' | remove: '.tiff' | remove: '.gif' %}
+{% comment %}
+  Sources that are already WebP (e.g. animated WebP previews) are served as-is: imagemagick
+  does not take .webp as an input format, so the responsive variants would never be generated
+  and the srcset would just 404 before falling back to the original.
+{% endcomment %}
+{% assign img_ext = include.path | slice: -5, 5 | downcase %}
 
 <figure>
   <picture>
@@ -7,7 +13,7 @@
       See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
       https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
     -->
-    {% if site.imagemagick.enabled %}
+    {% if site.imagemagick.enabled and img_ext != '.webp' %}
       <source
         class="responsive-img-srcset"
         srcset="{% for i in site.imagemagick.widths %}{{ img_path | relative_url }}-{{ i }}.webp {{i}}w,{% endfor %}"
