@@ -51,11 +51,11 @@
     selected={true}
 }
 
-@article{mishani2025srmp,
+@inproceedings{mishani2025srmp,
     title={SRMP: Search-Based Robot Motion Planning Library},
     author={Itamar Mishani and Yorai Shaoul and Ramkumar Natarajan and Jiaoyang Li and Maxim Likhachev},
-    journal={arXiv preprint arXiv:2509.25352},
-    year={2025},
+    booktitle={2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+    year={2026},
     eprint={2509.25352},
     archivePrefix={arXiv},
     primaryClass={cs.RO},
@@ -69,19 +69,20 @@
 }
 
 @article{gandotra2025bctmp,
-    title={Constant-Time Motion Planning with Manipulation Behaviors},
-    author={Nayesha Gandotra* and Itamar Mishani* and Maxim Likhachev},
-    journal={arXiv preprint arXiv:2512.00939},
-    year={2025},
+    title={Constant-Time Planning for Chaining Collision-free Motion to Manipulation Behaviors},
+    author={Nayesha Gandotra* and Itamar Mishani* and Lai Yuan and Oren Salzman and Maxim Likhachev},
+    journal={Under review. Also presented at the Search Algorithms for Robot Learning Workshop, IROS 2026},
+    year={2026},
     eprint={2512.00939},
     archivePrefix={arXiv},
     primaryClass={cs.RO},
     arxiv={2512.00939},
     url={https://arxiv.org/abs/2512.00939},
     preview={bctmp_neighbourhoods.png},
-    abstract={This paper introduces Behavioral Constant-Time Motion Planner (B-CTMP), which extends existing motion planning methods to handle manipulation tasks. The approach combines collision-free motion to a behavior initiation state, followed by execution of a manipulation behavior such as grasping or insertion. The algorithm uses preprocessing to guarantee constant-time query in mere milliseconds while ensuring completeness and successful task execution.},
+    abstract={This paper introduces the Behavioral Constant-Time Motion Planner (B-CTMP), which extends Constant-Time Motion Planning (CTMP) to two-step manipulation tasks: a collision-free motion to a behavior initiation state, followed by execution of a manipulation behavior such as grasping or insertion. Since such behaviors are increasingly stochastic (e.g., learned skills), B-CTMP builds neighborhoods in object-pose space and caches a plan only if repeated rollouts statistically certify its success rate above a user-specified threshold, with guarantees that hold across the entire cache at a prescribed confidence level. Online queries return certified plans, or reject infeasible object poses, within a fixed time budget of milliseconds. We evaluate B-CTMP on shelf picking, plug insertion, and wheel replacement in simulation and on real robots.},
     bibtex_show={true},
-    selected={false}
+    selected={false},
+    recognition={Best Paper Award (IROS 2026 Workshop)},
 }
 
 @inproceedings{mmd,

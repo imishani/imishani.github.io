@@ -5,4 +5,4 @@ inline: true
 related_posts: true
 ---
 
-Released [SRMP](https://srmp.readthedocs.io/en/latest/): a search-based robot motion planning library for single and multi-robot manipulation. Features multi-simulator support (MuJoCo, PyBullet, Isaac), Python/C++ APIs, and a MoveIt! plugin for real-world deployment.
+Released [SRMP](https://srmp.readthedocs.io/en/latest/): a search-based robot motion planning library for single and multi-robot manipulation. Join the community on [Discord](https://discord.gg/3rnwRASfF).
