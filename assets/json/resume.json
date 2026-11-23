@@ -83,16 +83,6 @@
       "position": "PET (Israeli SAT) Teacher",
       "startDate": "2017-01-01",
       "endDate": "2017-09-01"
-    },
-    {
-      "name": "Search and Rescue Unit",
-      "position": "Military Service",
-      "startDate": "2012-03-01",
-      "endDate": "2016-07-01",
-      "highlights": [
-        "Company second-in-command, later serving simultaneously as second-in-command and acting company commander, leading around 120 soldiers.",
-        "Awarded Top Graduate of the Commanders Course (around 200 cadets)."
-      ]
     }
   ],
   "education": [
@@ -170,7 +160,18 @@
   "skills": [
     {
       "name": "Tools",
-      "keywords": ["C++", "Python", "PyTorch", "ROS", "MoveIt", "Robot physics simulators", "Linux", "Git", "Arduino", "SolidWorks"]
+      "keywords": [
+        "C++",
+        "Python",
+        "PyTorch",
+        "ROS",
+        "MoveIt",
+        "Robot physics simulators",
+        "Linux",
+        "Git",
+        "Arduino",
+        "SolidWorks"
+      ]
     }
   ]
 }
