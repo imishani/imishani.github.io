@@ -1,6 +1,23 @@
 ---
 ---
 
+@article{mishani2026lazymosaic,
+    title={Lazy-MOSAIC: Accelerating Skill-Centric Manipulation Planning with Learned Skill-Effect World Models},
+    author={Itamar Mishani and Mukund Krishnakumar and Oren Salzman and Maxim Likhachev},
+    journal={Under review},
+    year={2026},
+    eprint={2611.21517},
+    archivePrefix={arXiv},
+    primaryClass={cs.RO},
+    arxiv={2611.21517},
+    url={https://arxiv.org/abs/2611.21517},
+    preview={lazy_mosaic.png},
+    website={https://skill-mosaic.github.io/},
+    abstract={Long-horizon manipulation requires sequencing many physical interactions, and evaluating each candidate skill's feasibility and effect with a physics simulator is expensive. MOSAIC lets skills guide a non-sequential search toward regions where they are likely to succeed, but pays the full simulation cost for every parameterized skill it considers. Lazy-MOSAIC instead searches over hypothesized skill outcomes: a cheap learned skill-effect world model predicts, in a fraction of a millisecond, a skill's feasibility and the world state it produces. These predictions focus expensive simulation on promising candidates, and when a hypothesis is invalidated, only the affected part of the search is repaired, while every skill in a returned plan is still validated in simulation. On cluttered-shelf retrieval tasks of increasing difficulty and on a physical robot, Lazy-MOSAIC plans substantially faster than baselines with fewer simulator queries, while matching or exceeding their success rate in every setting.},
+    bibtex_show={true},
+    selected={true}
+}
+
 @inproceedings{mishani2026mosaic,
     title={MOSAIC: Skill-Centric Manipulation Planning with Physics Simulation},
     author={Itamar Mishani and Yorai Shaoul and Maxim Likhachev},
@@ -31,7 +48,7 @@
     preview={pachs.png},
     abstract={This paper presents PACHS, a parallel best-first search algorithm for inference that combines both components of actor-critic architecture. The actor network generates actions, while the critic network provides cost-to-go estimates to guide the search. The approach employs dual parallelism through batch processing by neural networks and multi-threaded graph expansion.},
     bibtex_show={true},
-    selected={true}
+    selected={false}
 }
 
 @article{mishani2026mgs,
@@ -48,7 +65,7 @@
     website={https://multi-graph-search.github.io/},
     abstract={This paper introduces Multi-Graph Search (MGS), a novel search-based motion planning approach designed for high-dimensional robotic systems like manipulators and mobile manipulators. The algorithm generalizes traditional unidirectional and bidirectional search to work with multiple implicit graphs simultaneously. It maintains and incrementally expands multiple implicit graphs over the state space, focusing exploration on high-potential regions while allowing disconnected subgraphs to merge through feasible transitions.},
     bibtex_show={true},
-    selected={true}
+    selected={false}
 }
 
 @inproceedings{mishani2025srmp,
