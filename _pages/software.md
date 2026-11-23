@@ -70,16 +70,3 @@ If you prefer code, SRMP takes a few lines of Python and plugs into MuJoCo, PyBu
   <video src="{{ '/assets/video/srmp_python_api.mp4' | relative_url }}" poster="{{ '/assets/video/srmp_python_api.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" autoplay muted loop playsinline preload="metadata"></video>
   <figcaption class="caption">Planning from Python and running the plan in a simulator and in MoveIt!.</figcaption>
 </figure>
-
----
-
-## Other Repositories
-
-{% if site.data.repositories.github_repos %}
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for repo in site.data.repositories.github_repos %}
-    {% include repository/repo.liquid repository=repo %}
-  {% endfor %}
-</div>
-{% endif %}
